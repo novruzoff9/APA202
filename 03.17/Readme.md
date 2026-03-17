@@ -1,10 +1,9 @@
+# Nəqliyyat Sistemi
 
-# Inheritance Tapşırığı — Nəqliyyat Sistemi
-
-1. Bir `Vehicle` base class-ı yaradın. Class daxilində aşağıdakı property-ləri yaradın:
-	- Brand
-	- Model
-	- Year
+1. Bir `Vehicle` class-ı yaradın. Class daxilində aşağıdakı property-ləri yaradın:
+	- Brand (encapsulation ilə minimum 3 simvol olmalıdır)
+	- Model 
+	- Year (encapsulation ilə 1900-dən böyük olmalıdır)
 	- MileageKm
 	- IsRunning
 
@@ -27,7 +26,6 @@
 		Nəqliyyat vasitəsi haqqında məlumat göstərir.
 		Məlumat aşağıdakı formatda göstərilməlidir:
 		```
-		Type: Vehicle
 		Brand: Toyota
 		Model: Corolla
 		Year: 2018
@@ -37,8 +35,8 @@
 
 4. `Vehicle`-dan miras alan `Car` class-ı yaradın.
 	- Əlavə property-lər:
-		- FuelCapacity
-		- Fuel
+		- FuelCapacity (encapsulation ilə müsbət olmalıdır)
+		- Fuel (encapsulation ilə müsbət olmalıdır)
 		- FuelConsumptionPer100Km (məsələn 7.5)
 
 	- Constructor aşağıdakı məlumatları qəbul etməlidir:
@@ -75,63 +73,7 @@
 		Fuel >= requiredLiters
 		```
 
-	- `VehicleInfo()` method-un override edin və `Type` sətrini `Car` göstərin, əlavə olaraq `Fuel` sətri də çıxsın:
+	- `VehicleInfo()` method-un override edin və əlavə olaraq `Fuel` sətri də çıxsın:
 		```
 		Fuel: 20.0L / 50.0L
 		```
-
-5. `Vehicle`-dan miras alan `ElectricCar` class-ı yaradın.
-	- Əlavə property-lər:
-		- BatteryCapacity
-		- Battery
-		- ConsumptionKWhPer100Km (məsələn 15)
-
-	- Constructor aşağıdakı məlumatları qəbul etməlidir:
-		- Brand
-		- Model
-		- Year
-		- BatteryCapacity
-		- ConsumptionKWhPer100Km
-		- Battery
-
-		Qaydalar:
-		```text
-		0 <= Battery <= BatteryCapacity
-		```
-
-	- `Charge(double kwh)`
-		Batareyanı doldurur.
-
-		Şərt:
-		```text
-		Battery + kwh <= BatteryCapacity
-		```
-
-	- `Drive(int km)` method-un override edin.
-		Sürüş zamanı enerji sərf olunmalıdır.
-
-		Sərf:
-		```text
-		requiredKWh = (km / 100.0) * ConsumptionKWhPer100Km
-		```
-
-		Əlavə şərt:
-		```text
-		Battery >= requiredKWh
-		```
-
-	- `VehicleInfo()` method-un override edin və `Type` sətrini `ElectricCar` göstərin, əlavə olaraq `Battery` sətri də çıxsın:
-		```
-		Battery: 30.0kWh / 60.0kWh
-		```
-
-6. `Program.cs` daxilində aşağıdakıları edin:
-	- Həm `Car`, həm də `ElectricCar` üçün obyekt yaradın.
-	- Derived ctor-larda `base(...)` constructor çağırışından istifadə edin.
-	- Ən azı 1 dəfə `Drive` method-un polymorphism ilə çağırın:
-		```csharp
-		Vehicle v = new ElectricCar(...);
-		v.StartEngine();
-		v.Drive(120);
-		```
-	- `StartEngine/StopEngine`, `Drive`, `Refuel/Charge`, `VehicleInfo` çağırışlarını test edin.
