@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\APA202\\03.19\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{39C83661-4951-450F-948C-183AF95DA713}|03.19\\03.19.csproj|c:\\users\\user\\desktop\\apa202\\03.19\\03.19\\ifoodservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C83661-4951-450F-948C-183AF95DA713}|03.19\\03.19.csproj|solutionrelative:03.19\\ifoodservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{39C83661-4951-450F-948C-183AF95DA713}|03.19\\03.19.csproj|c:\\users\\user\\desktop\\apa202\\03.19\\03.19\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39C83661-4951-450F-948C-183AF95DA713}|03.19\\03.19.csproj|solutionrelative:03.19\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C83661-4951-450F-948C-183AF95DA713}|03.19\\03.19.csproj|c:\\users\\user\\desktop\\apa202\\03.19\\03.19\\models\\fries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C83661-4951-450F-948C-183AF95DA713}|03.19\\03.19.csproj|solutionrelative:03.19\\models\\fries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C83661-4951-450F-948C-183AF95DA713}|03.19\\03.19.csproj|c:\\users\\user\\desktop\\apa202\\03.19\\03.19\\models\\pizza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C83661-4951-450F-948C-183AF95DA713}|03.19\\03.19.csproj|solutionrelative:03.19\\models\\pizza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C83661-4951-450F-948C-183AF95DA713}|03.19\\03.19.csproj|c:\\users\\user\\desktop\\apa202\\03.19\\03.19\\models\\food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C83661-4951-450F-948C-183AF95DA713}|03.19\\03.19.csproj|solutionrelative:03.19\\models\\food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,12 +43,64 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "IFoodService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\APA202\\03.19\\03.19\\IFoodService.cs",
+              "RelativeDocumentMoniker": "03.19\\IFoodService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\APA202\\03.19\\03.19\\IFoodService.cs",
+              "RelativeToolTip": "03.19\\IFoodService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAcAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T14:12:51.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Food.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\APA202\\03.19\\03.19\\Models\\Food.cs",
+              "RelativeDocumentMoniker": "03.19\\Models\\Food.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\APA202\\03.19\\03.19\\Models\\Food.cs",
+              "RelativeToolTip": "03.19\\Models\\Food.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T13:59:14.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Fries.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\APA202\\03.19\\03.19\\Models\\Fries.cs",
+              "RelativeDocumentMoniker": "03.19\\Models\\Fries.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\APA202\\03.19\\03.19\\Models\\Fries.cs",
+              "RelativeToolTip": "03.19\\Models\\Fries.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T13:48:30.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Pizza.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\APA202\\03.19\\03.19\\Models\\Pizza.cs",
+              "RelativeDocumentMoniker": "03.19\\Models\\Pizza.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\APA202\\03.19\\03.19\\Models\\Pizza.cs",
+              "RelativeToolTip": "03.19\\Models\\Pizza.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T13:36:41.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\APA202\\03.19\\03.19\\Program.cs",
               "RelativeDocumentMoniker": "03.19\\Program.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\APA202\\03.19\\03.19\\Program.cs",
               "RelativeToolTip": "03.19\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-19T10:58:55.973Z",
               "EditorCaption": ""
