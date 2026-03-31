@@ -1,5 +1,5 @@
 ## Kart Sistemi:
-1. `Card` adında abstrakt class yaradırıq:
+1. `Card` adında class yaradırıq:
     - Id (statik olaraq artacaq)
     - Balance
     - Bonus
