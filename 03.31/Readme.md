@@ -1,6 +1,6 @@
 ## Kart Sistemi:
 1. `Card` adında abstrakt class yaradırıq:
-    - Id
+    - Id (statik olaraq artacaq)
     - Balance
     - Bonus
     - CardNumber (mütləq 16 rəqəmdən ibarət olmalıdır)
