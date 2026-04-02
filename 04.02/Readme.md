@@ -13,12 +13,14 @@
     - `Id` dəyəri Constructor vasitəsilə statik olaraq avtomatik veriləcək, `Created` dəyəri constructor-da hazırki vaxtı göstərəcək.
     - `ToString()` override edilməli
 3. `ITaskService` interfeysi yaradırıq
-    - 3.1. Siyahıya Task əlavə etmək üçün metod. (eyni başlıqlı Task artırılsa `ConflictException` qaytaracaq)
-    - 3.2 Title-a görə Siyahıdan task-i tapan metod
+    - 3.1 Title-a görə Siyahıdan task-i tapan metod
+    - 3.2. Siyahıya Task əlavə etmək üçün metod. (eyni başlıqlı Task artırılsa `ConflictException` qaytaracaq)
 4. `TaskService` class-ı yaradırıq
-    - Task-lar üçün statik Massiv saxlayır özündə
-    - 3.1-deki tapsirigda Siyahıya Task əlavə etmək üçün metodda eyni başlıqlı Task artırılsa `ConflictException` qaytaracaq
-    - 3.2 -deki Title-a görə Siyahıdan task-i tapan metod-da eger hec bir task tapilmasa `NotFoundException` qaytarsın
+    - Task-lar üçün statik List saxlayır özündə
+    - 3.1 -deki Title-a görə Siyahıdan task-i tapan metod-da eger hec bir task tapilmasa `NotFoundException` qaytarsın
+    - 3.2 -deki Siyahıya Task əlavə etmək üçün metodda eyni başlıqlı Task artırılsa `ConflictException` qaytaracaq
+    - 3.3 Göndərilən Status-da olan task-ları tapan metod
+    - 3.4 Göndərilən Id-də olan elementi siyahıdan silmək üçün metod
 5. Extension metodlar `TaskHelper` class-ı
     - Task-ın bitməyinə nə qədər müddət qaldığını qaytaran metod
     - Task üçün nə qədər vaxt ayrıldığını göstərən metod
@@ -50,7 +52,7 @@
     - 2.1 İstifadəçi əlavə etmək üçün metod
     - 2.2 Email-ə görə istifadəçini tapan metod
 4. `UserService` class-ı yaradılacaq
-    - İstifadəçilər üçün statik Massiv saxlayır özündə
+    - İstifadəçilər üçün statik List saxlayır özündə
     - 2.1 -deki tapsirigda İstifadəçi əlavə etmək üçün metod-da eyni email-li istifadəçi artırılsa `ConflictException` qaytaracaq
     - 2.2 -deki Email-ə görə istifadəçini tapan metod-da eger hec bir istifadəçi tapilmasa `NotFoundException` qaytarsın
 3. `ITaskService` interfeysində aşağıdakı metodlar əlavə ediləcək:
