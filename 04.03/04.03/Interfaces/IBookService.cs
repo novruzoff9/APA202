@@ -11,7 +11,5 @@ namespace _04._03.Interfaces
     {
         void Add(Book book);
         Book GetById(int id);
-
-
     }
 }

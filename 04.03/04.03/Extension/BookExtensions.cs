@@ -17,6 +17,22 @@ namespace _04._03.Extension
         {
             return $"{book.Title},{book.Author},{book.Price}";
         }
+
+        public static bool IsInStock(this Book book)
+        {
+            return book.StockCount > 0;
+        }
+
+        public static decimal ApplyDiscount(this Book book, double percent)
+        {
+           return book.Price - book.Price * (decimal)percent / 100;
+            //+1
+            //+1
+        }
         
+
+
+
+
     }
 }

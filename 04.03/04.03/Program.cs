@@ -6,12 +6,13 @@ using _04._03.Services;
 Book book1 = new Book()
 {
     Title = "Xosrov",
-    Author = "Nizami",
+    Author = "Sirin",
     PageCount = 200,
     Price = 20,
     StockCount = 10,
-    Genre = Genre.Romance
+    Genre = Genre.Science
 };
+
 Book book2 = new Book()
 {
     Title = "Seyfeli",
@@ -21,15 +22,35 @@ Book book2 = new Book()
     StockCount = 15,
     Genre = Genre.Romance
 };
+
+Book book3 = new Book()
+{
+    Title = "Leyli",
+    Author = "Mecnun",
+    PageCount = 400,
+    Price = 71,
+    StockCount = 20,
+    Genre = Genre.Programming
+};
+
 BookService bookService = new BookService();
-bookService.Add(book1);
-bookService.Add(book2);
 
-Console.WriteLine(bookService.GetById(1));
+bookService.ReadFromFile();
+
+//bookService.Add(book1);
+//bookService.Add(book2);
+//bookService.Add(book3);
+
+bookService.WriteToFile();
 
 
-Console.WriteLine(BookExtensions.GetShortInfo(book1));
-Console.WriteLine(book1.GetShortInfo());
+//Console.WriteLine(bookService.CountByGenre(Genre.Romance));
+
+//Console.WriteLine(bookService.GetById(1));
+
+////Console.WriteLine(BookExtensions.GetShortInfo(book1));
+//Console.WriteLine(book1.GetShortInfo());
+
 
 
 
