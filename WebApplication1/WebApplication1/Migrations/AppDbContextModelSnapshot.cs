@@ -46,6 +46,32 @@ namespace WebApplication1.Migrations
                     b.ToTable("Services");
                 });
 
+            modelBuilder.Entity("WebApplication1.Models.SocialMedia", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Icon")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TeamMemberId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Url")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TeamMemberId");
+
+                    b.ToTable("SocialMedias");
+                });
+
             modelBuilder.Entity("WebApplication1.Models.TeamMember", b =>
                 {
                     b.Property<int>("Id")
@@ -73,6 +99,22 @@ namespace WebApplication1.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("TeamMembers");
+                });
+
+            modelBuilder.Entity("WebApplication1.Models.SocialMedia", b =>
+                {
+                    b.HasOne("WebApplication1.Models.TeamMember", "TeamMember")
+                        .WithMany("SocialMedias")
+                        .HasForeignKey("TeamMemberId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("TeamMember");
+                });
+
+            modelBuilder.Entity("WebApplication1.Models.TeamMember", b =>
+                {
+                    b.Navigation("SocialMedias");
                 });
 #pragma warning restore 612, 618
         }

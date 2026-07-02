@@ -32,10 +32,14 @@
                                 <span>@teamMember.Position</span>
                                 <p>@teamMember.Description</p>
                                 <div class="social">
-                                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""> <i class="bi bi-linkedin"></i> </a>
+                                    @foreach (var item in teamMember.SocialMedias)
+                                    {
+                                        <a href="@item.Url"><i class="@item.Icon"></i></a>
+
+                                    }
+                                   
+                                   
+                                    
                                 </div>
                             </div>
                         </div>

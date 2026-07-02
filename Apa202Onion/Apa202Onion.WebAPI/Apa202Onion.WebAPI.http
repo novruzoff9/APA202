@@ -1,0 +1,6 @@
+@Apa202Onion.WebAPI_HostAddress = http://localhost:5015
+
+GET {{Apa202Onion.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
